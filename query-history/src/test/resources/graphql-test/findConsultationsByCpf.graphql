@@ -1,0 +1,5 @@
+query findConsultationsByCpf($cpf: String!) {
+    findConsultationsByCpf(cpf: $cpf) {
+        id
+    }
+}

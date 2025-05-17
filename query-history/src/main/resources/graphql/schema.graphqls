@@ -1,0 +1,33 @@
+type ConsultationDoctor {
+    crm: String!
+    name: String!
+}
+
+type ConsultationNurse {
+    cip: String!
+    name: String!
+}
+
+type ConsultationPatient {
+    cpf: String!
+    name: String!
+}
+
+enum Specialty {
+    CLINICO_GERAL
+    PEDIATRA
+    GERIATRIA
+}
+
+type ConsultationResponse {
+    id: ID!
+    doctor: ConsultationDoctor!
+    markedBy: ConsultationNurse!
+    patient: ConsultationPatient!
+    dateAndHour: String!
+    specialty: Specialty!
+}
+
+type Query {
+    findConsultationsByCpf(cpf: String!): [ConsultationResponse!]!
+}
