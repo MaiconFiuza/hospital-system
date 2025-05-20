@@ -39,6 +39,8 @@ services:
       SPRING_RABBITMQ_PORT: 5672
     ports:
       - "8080:8080"
+    restart: on-failure
+
 
   order-notification:
     build:
@@ -53,6 +55,7 @@ services:
     environment:
       SPRING_RABBITMQ_HOST: rabbitmq
       SPRING_RABBITMQ_PORT: 5672
+    restart: on-failure
 
   query-history:
     build:
@@ -69,6 +72,8 @@ services:
       SPRING_JPA_DATABASE_PLATFORM: org.hibernate.dialect.MySQL8Dialect
     ports:
       - "8082:8082"
+    restart: on-failure
+
 
 volumes:
   mysql_data:
