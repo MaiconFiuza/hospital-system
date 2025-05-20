@@ -21,7 +21,7 @@ Link para a documentação das API's do projeto (OpenAPI):
 #### Serviço de Notificações  
 Serviço responsável por envia lembretes automáticos aos pacientes sobre consultas futuras ou alteração nas consultas 
 
-Disponível na porta http://localhost:8080/
+Disponível na porta http://localhost:8081/
 
 #### Serviço de Histórico 
 Serviço responsável por buscar as consultas utilizando graphql 
