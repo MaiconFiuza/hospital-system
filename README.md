@@ -65,4 +65,4 @@ O relatório de cobertura pode ser encontrado dentro da pasta `./target`. Para a
 
 ### Vídeo de apresentação do projeto
 
-O Vídeo de apresentação se encontra no seguinte [link](https://www.youtube.com/watch?v=mtklA93RSFQ)
+O Vídeo de apresentação se encontra no seguinte (link)[https://youtu.be/URzq8rQ0bvI]
